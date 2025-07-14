@@ -1,5 +1,5 @@
 # Talk To Images
-**Note**: This repository is just a Readme that describes a private repo that I have uploaded. A demo may be available upon request.
+**Note**: This repository is just a Readme and image files that describe a private repo that I have uploaded. A demo may be available upon request.
 ### Overview
 Talk To Images is a web application that lets users interact with the text content of an image.
 Users can upload an image containing text, ask questions about the text in natural language, and receive both an answer and a version of the image with the relevant text highlighted.
