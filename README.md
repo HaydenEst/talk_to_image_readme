@@ -7,6 +7,29 @@ Users can upload an image containing text, ask questions about the text in natur
 This combines Optical Character Recognition (OCR) with a conversational AI agent to make interacting with image-based text intuitive and useful — for example, extracting specific details, summarizing content, or locating key information.
 
 ### Demo
+For this walkthrough, I will be using images regarding John Steinbeck's Grapes of Wrath. One image is of a page from my physical copy of the novel. The second is screenshot of an llm generated summary of the book.
+
+#### UI
+The UI contains 4 core elements: 
+- API Submission: Submit the openai api key to power the agent
+- Image Upload: Upload images to provide context to the agent
+- Textbox: Ask the agent questions
+- Highighted Images: Highlighted images to show where the agent got their answers.
+![display](media/display.jpg)
+
+#### Image upload
+Below shows how to upload an image
+![upload](media/upload_images.gif)
+
+#### Interacting with the chatbot
+*Query 1: Tell me about Tom in the novel.*
+![query_1](media/query_1.gif)
+
+*Query 2: Tell me about Ma's journey, and compare her story with Tom's (Based on your previous response).*
+![query_2](media/query_2.gif)
+
+*Query 3: What did Tom hand to Al? Also, who died first among the family?*
+![query_3](media/query_3.gif)
 
 ### How It Works
 The application consists of three main components:
@@ -24,8 +47,6 @@ The application consists of three main components:
   is stored in a vectorDB for future RAG operations.
 
 2. Conversational Agent
-  The extracted text is passed to an agent powered by OpenAI’s GPT-4.1-mini model.
-  
   The agent understands the query, and invokes the RAG tool with different variations
   of the query. With this, the text context and bounding box coordinates are retrieved,
   allowing the agent to answer the user query, and highlight the image.
