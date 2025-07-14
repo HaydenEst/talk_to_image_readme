@@ -19,7 +19,7 @@ The UI contains 4 core elements:
 
 #### Image upload
 Below shows how to upload an image
-![upload](media/upload_images.gif)
+![upload](media/upload_images.jpg)
 
 #### Interacting with the chatbot
 *Query 1: Tell me about Tom in the novel.*
