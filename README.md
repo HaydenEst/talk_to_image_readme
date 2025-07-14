@@ -18,7 +18,6 @@ The UI contains 4 core elements:
 ![display](media/display.jpg)
 
 #### Image upload
-Below shows how to upload an image
 ![upload](media/upload_images.jpg)
 
 #### Interacting with the chatbot
